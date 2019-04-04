@@ -1,0 +1,46 @@
+# API MANAGEMENT
+
+GET {{host-url}}//todoLists/all
+
+###
+
+GET {{host-url}}/todoLists/getDefaultTodoList
+
+###
+
+POST {{host-url}}/todoLists
+Content-Type: application/json
+
+{
+  "name": "Chores"
+}
+###
+
+DELETE {{host-url}}/todoLists/3f6f9f6c-c3c2-40ba-a741-68615c6c8247
+###
+
+
+
+# API TODO MANAGEMENT
+
+GET {{host-url}}//todos/all
+
+###
+
+GET {{host-url}}//todos/byId/55d82bde-c0c3-4df1-a53f-e02aca638343
+
+###
+
+POST {{host-url}}//todos
+Content-Type: application/json
+
+{
+  "title": "Todo #1",
+  "text": "Add Serach by DDMM",
+  "todoListId": "55d82bde-c0c3-4df1-a53f-e02aca638343"
+}
+###
+
+DELETE {{host-url}}//todos/5d6e01a8-ae61-4303-8385-28c0621cfaaf
+
+###
